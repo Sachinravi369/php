@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update User Details</title>
+</head>
+<body style="text-align: center;">
+    <h1>Update User Details</h1>
+    <div class="form-box">
+        <form method="post" action="update_data.php">
+            <label for="name">Enter Current User Name:</label><br>
+            <input type="text" name="name" size="40" required><br><br>
+
+            <label for="column">Select Column to Update:</label><br>
+            <select name="column" required>
+                <option value="name">Name</option>
+                <option value="age">Age</option>
+                <option value="phone_number">Phone Number</option>
+                <option value="email">Email</option>
+            </select><br><br>
+
+            <label for="new_data">Enter New Data:</label><br>
+            <input type="text" name="new_data" size="40" required><br><br>
+
+            <input type="submit" name="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>
